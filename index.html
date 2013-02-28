@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Medtronic</title>
+	<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0;" name="viewport" />
+	<link href="Styles/styles.css" type="text/css" rel="stylesheet" />
+	<meta name="apple-mobile-web-app-capable" content="yes" />	
+	<link href="Styles/jquery.mobile-1.0rc2.css" type="text/css" rel="stylesheet" />
+	<script type="text/javascript" src="http://code.jquery.com/jquery-1.6.4.min.js"></script>
+	<script type="text/javascript" src="http://code.jquery.com/mobile/1.0rc2/jquery.mobile-1.0rc2.min.js"></script>
+</head>
+<body>
+
+<div data-role="page" id="Home">
+  <header data-role="header">
+  <div id="logo-app"><img src="Images/logo-app.png"></div>
+  <nav>
+    <select id="menu" >
+      <option selected="selected" value="0">Regione</option>
+      <option value="1">Lazio</option>
+      <option value="2">Lombardia</option>
+      <option value="5">Emilia Romagna</option>
+      <option value="3">Campania</option>
+    </select>
+  </nav>
+  <nav>
+    <select id="menu">
+      <option selected="selected" value="0">Tipologia d'intervento</option>
+      <option value="1">prima</option>
+      <option value="2">seconda</option>
+      <option value="5">terza</option>
+      <option value="3">quarta</option>
+    </select>
+  </nav>
+  <div class="searchbutton">
+     <input class="button grn" type="submit" value="Go">
+  </div>
+  <div id="logo-med"><img src="Images/logo-med.png"></div>
+</header> 
+  <section id="costi">     
+    <article>  
+     <table id="costi" cellspacing="1">
+	     <thead>
+		    <tr>
+			  <th colspan="2"><h1>titolo blocco</h1></th>
+			</tr>
+		 </thead>
+         <tr>
+             <td>primo elemento</td>
+             <td><input placeholder="costo default" type="number" value="" id="searchtext" name="q"></td>
+         </tr> 
+         <tr>
+             <td>secondo elemento</td>
+             <td><input placeholder="costo default" type="number" value="" id="searchtext" name="q"></td>
+         </tr>
+		 <tfoot>
+		   <tr>
+             <th>totale</th>
+             <th>tot</th>
+		   </tr>
+         </tfoot>
+	 </table>	
+	</article>
+	    <article>  
+     <table id="costi" cellspacing="1">
+	     <thead>
+		    <tr>
+			  <th colspan="2"><h1>titolo blocco</h1></th>
+			</tr>
+		 </thead>
+         <tr>
+             <td>primo elemento</td>
+             <td><input placeholder="costo default" type="number" value="" id="searchtext" name="q"></td>
+         </tr> 
+         <tr>
+             <td>secondo elemento</td>
+             <td><input placeholder="costo default" type="number" value="" id="searchtext" name="q"></td>
+         </tr>
+		 <tfoot>
+		   <tr>
+             <th>totale</th>
+             <th>tot</th>
+		   </tr>
+         </tfoot>
+	 </table>
+    <div data-role="listview" data-inset="true"><a href="#result">Result</a></div>	 
+	</article>
+</section>	
+<footer>disclaimer: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris tempor, nunc a egestas varius, lacus mi facilisis nisl, quis blandit purus mauris in arcu. </footer>		
+</div>
+<div data-role="page" data-add-back-btn="true" id="result" class="second-page">
+ <header data-role="header">
+  <div id="logo-app"><img src="Images/logo-app.png"></div>
+  <nav>
+    <select id="menu" >
+      <option selected="selected" value="0">Regione</option>
+      <option value="1">Lazio</option>
+      <option value="2">Lombardia</option>
+      <option value="5">Emilia Romagna</option>
+      <option value="3">Campania</option>
+    </select>
+  </nav>
+  <nav>
+    <select id="menu">
+      <option selected="selected" value="0">Tipologia d'intervento</option>
+      <option value="1">prima</option>
+      <option value="2">seconda</option>
+      <option value="5">terza</option>
+      <option value="3">quarta</option>
+    </select>
+  </nav>
+  <div class="searchbutton">
+     <input class="button grn" type="submit" value="Go">
+  </div>
+  <div id="logo-med"><img src="Images/logo-med.png"></div>
+</header> 
+    <section class="result"> 
+	<article class="calcolo">
+     <table class="costi" cellspacing="1">
+	     <thead>
+		    <tr>
+			  <th >DRG</th>
+			  <th >rimbors0</th>
+			</tr>
+		 </thead>
+         <tr>
+             <td>totale costi</td>
+             <td>cifra</td>
+         </tr> 
+         <tr>
+             <td>margine</td>
+             <td>cifra</td>
+         </tr>
+	 </table>
+	  <div class="grafico">
+         <img src="Images/grafico-prova.png">
+      </div>
+	 </article>
+	 	<article class="calcolo">
+     <table class="costi" cellspacing="1">
+	     <thead>
+		    <tr>
+			  <th >DRG</th>
+			  <th >rimbors0</th>
+			</tr>
+		 </thead>
+         <tr>
+             <td>totale costi</td>
+             <td>cifra</td>
+         </tr> 
+         <tr>
+             <td>margine</td>
+             <td>cifra</td>
+         </tr>
+	 </table>
+	  <div class="grafico">
+         <img src="Images/grafico-prova.png">
+      </div>
+	 </article>
+	 	<article class="calcolo">
+     <table class="costi" cellspacing="1">
+	     <thead>
+		    <tr>
+			  <th >DRG</th>
+			  <th >rimbors0</th>
+			</tr>
+		 </thead>
+         <tr>
+             <td>totale costi</td>
+             <td>cifra</td>
+         </tr> 
+         <tr>
+             <td>margine</td>
+             <td>cifra</td>
+         </tr>
+	 </table>
+	  <div class="grafico">
+         <img src="Images/grafico-prova.png">
+      </div>
+	 </article>
+	 <div class="back"><a href="#" data-rel="back" data-theme="a">back</a></div>
+	</section> 
+<footer>disclaimer: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris tempor, nunc a egestas varius, lacus mi facilisis nisl, quis blandit purus mauris in arcu. </footer>			
+</div>
+</body>
+</html>
